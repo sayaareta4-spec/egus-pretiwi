@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hisense Laser TV</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #03151d, #0d3b4d);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container{
+      width:100%;
+      min-height:100vh;
+      padding:40px 8%;
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:50px;
+    }
+
+    .logo{
+      font-size:40px;
+      font-weight:bold;
+      color:white;
+      letter-spacing:2px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:white;
+      margin-left:25px;
+      transition:0.3s;
+      font-size:18px;
+    }
+
+    .menu a:hover{
+      color:#00d9ff;
+    }
+
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+      animation:fadeIn 1.5s ease;
+    }
+
+    .hero-text h1{
+      font-size:65px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero-text span{
+      color:#00d9ff;
+    }
+
+    .hero-text p{
+      font-size:20px;
+      line-height:1.8;
+      color:#d8d8d8;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#00c8ff;
+      color:white;
+      text-decoration:none;
+      border-radius:40px;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(0,200,255,0.5);
+    }
+
+    .btn:hover{
+      background:white;
+      color:#0b2230;
+      transform:scale(1.05);
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+      animation:float 4s ease-in-out infinite;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:650px;
+      border-radius:25px;
+      box-shadow:0 0 40px rgba(0,0,0,0.5);
+    }
+
+    .features{
+      margin-top:100px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.08);
+      padding:30px;
+      border-radius:20px;
+      backdrop-filter: blur(10px);
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background:rgba(0,200,255,0.15);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00d9ff;
+      font-size:24px;
+    }
+
+    .card p{
+      line-height:1.7;
+      color:#e4e4e4;
+    }
+
+    .benefits{
+      margin-top:100px;
+      text-align:center;
+    }
+
+    .benefits h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .benefits p{
+      width:80%;
+      margin:auto;
+      font-size:20px;
+      line-height:1.8;
+      color:#d8d8d8;
+    }
+
+    .footer{
+      margin-top:100px;
+      text-align:center;
+      padding:30px;
+      color:#bdbdbd;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-15px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateX(-50px);
+      }
+      to{
+        opacity:1;
+        transform:translateX(0);
+      }
+    }
+
+    @media(max-width:900px){
+      .hero{
+        flex-direction:column;
+      }
+
+      .hero-text h1{
+        font-size:45px;
+      }
+
+      .benefits p{
+        width:100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">Hisense</div>
+
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Produk</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Kontak</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+      <div class="hero-text">
+        <h1>
+          SMART <span>LASER TV</span><br>
+          Masa Depan Hiburan
+        </h1>
+
+        <p>
+          Nikmati pengalaman menonton dengan kualitas gambar ultra jernih,
+          warna yang hidup, dan teknologi Low Blue Light yang menjaga
+          kenyamanan mata meskipun digunakan dalam waktu lama.
+        </p>
+
+        <a href="#" class="btn">Beli Sekarang</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="hisense-laser-tv.jpg" alt="Hisense Laser TV">
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+
+      <div class="card">
+        <h3>Low Blue Light</h3>
+        <p>
+          Teknologi khusus yang mengurangi cahaya biru berbahaya sehingga
+          mata tetap nyaman dan aman untuk keluarga.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ultra HD 4K</h3>
+        <p>
+          Tampilan visual super tajam dengan detail realistis yang membuat
+          pengalaman menonton menjadi lebih imersif.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Audio Bioskop</h3>
+        <p>
+          Sistem suara premium menghadirkan audio menggelegar dan jernih
+          layaknya bioskop modern.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Smart Entertainment</h3>
+        <p>
+          Dilengkapi akses aplikasi streaming populer seperti YouTube,
+          Netflix, Disney+, dan lainnya.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Benefits -->
+    <div class="benefits">
+      <h2>Kenapa Memilih Hisense Laser TV?</h2>
+
+      <p>
+        Hisense Laser TV menghadirkan kombinasi sempurna antara teknologi,
+        kenyamanan, dan desain modern. Dengan layar besar berkualitas tinggi,
+        fitur hemat energi, serta sertifikasi Low Blue Light, televisi ini
+        sangat cocok digunakan untuk hiburan keluarga, gaming, hingga menonton
+        film favorit tanpa membuat mata cepat lelah.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 Hisense Smart Laser TV | Future Technology Display
+    </div>
+
+  </div>
+
+</body>
+</html>
